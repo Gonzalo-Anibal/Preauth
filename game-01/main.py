@@ -4,9 +4,9 @@ def main():
     suma = int(input("Ingresa el resultado de la suma : "))
     array.sort()
     position_sumando_A=0
-    while array[position_sumando_A] < suma:
+    while array[position_sumando_A] <= suma:
         position_sumando_B = position_sumando_A+1
-        while array[position_sumando_B] < suma:
+        while array[position_sumando_B] <= suma:
             if (array[position_sumando_A] + array[position_sumando_B]) == suma:
                 print("El primer subconjunto de 2 numeros que de resultado", suma, "son el", array[position_sumando_A], "y", array[position_sumando_B])
                 exit()
